@@ -37,10 +37,9 @@ class ValidationController extends GetxController {
     update();
   }
 
-  void updateErrorLocale()
-  {
-    emailErrorText.value = 'email_required'.tr;
-    passwordErrorText.value = 'password_required'.tr;
+  void updateErrorLocale() {
+    validateEmail();
+    validatePassword();
     update();
   }
 
